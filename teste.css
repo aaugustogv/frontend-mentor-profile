@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --heavy-blue: hsl(229, 23%, 23%);
+    --grey-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background: var(--dark-cyan);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./midias/bg-pattern-top.svg), url(./midias/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 50vh , left 51vw top 50vh;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+}
+.card {
+    background: whitesmoke;
+    max-width: 320px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.21);
+}
+.img-header {
+    display: block;
+    border-radius: 14px 14px 0 0;
+    width: 100%;
+}
+.card-img {
+    display: block;
+    border: 4px solid honeydew;
+    border-radius: 50%;
+    margin-top:  calc(-16%);
+}
+.card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h3 {
+    margin-top: 15px;
+    color: rgb(66, 68, 68)
+}
+span {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+.cidade {
+    margin-top: 12px;
+    font-weight: 200;
+    font-size: 15px;
+}
+hr {
+    transform: translateY(30px);
+    color: gray;
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 39px;
+}
+.footer-items {
+    text-align: center;
+}
+.footer-items h4 {
+    color: rgb(66, 68, 68);
+    font-size: 20px;
+}
+.atributos {
+    font-size: 10px;
+}
